@@ -19,10 +19,10 @@
 define('DB_NAME', 'verbode');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'admin');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'w9XFtL7gq]fA');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -80,3 +80,8 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
